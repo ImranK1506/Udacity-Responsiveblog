@@ -13,7 +13,7 @@ I've left some boilerplate below for you.
 */
 
 body {
-
+	width: 100%;
 }
 
 article {
@@ -25,5 +25,5 @@ h1 {
 }
 
 img {
-
+	max-width: 100%;
 }
