@@ -13,15 +13,16 @@ I've left some boilerplate below for you.
 */
 
 body {
-	width: 100%;
+	width: 800px;
+	margin: 0 auto;
 }
 
 article {
 	width: 50em;
 }
 
-h1 {
-
+h1, h2 {
+	text-align: center;
 }
 
 img {

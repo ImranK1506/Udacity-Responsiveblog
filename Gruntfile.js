@@ -12,7 +12,7 @@ module.exports = function(grunt) {
     responsive_images: {
       dev: {
         options: {
-          engine: 'im',           // ImageMagick
+          engine: 'gm',           // ImageMagick
            sizes: [{
             name: 'small',
             width: '30%',
