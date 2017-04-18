@@ -64,6 +64,21 @@ module.exports = function(grunt) {
       }
     },
 
+    /* Grunticon */
+    grunticon: {
+      myIcons: {
+        files: [{
+          expand: true,
+          src: ['*.svg', '*.png'],
+          cwd: 'images/svg/svg_in',
+          dest: 'images/svg/svg_out'
+        }],
+        options: {
+          loadersnippet: 'grunticon.loader.js',
+        }
+      }
+    },
+
     /* Copy the "fixed" images that don't go through processing into the images/directory */
     copy: {
       dev: {
@@ -83,6 +98,7 @@ module.exports = function(grunt) {
     'mkdir',
     'copy',
     'responsive_images',
-    'concat'
+    'concat',
+    'grunticon:myIcons'
   ]);
 };
