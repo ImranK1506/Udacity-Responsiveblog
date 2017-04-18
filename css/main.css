@@ -33,6 +33,7 @@ img {
 	display: block;
 	text-align: center;
 	width: 100%;
+	margin: 2% 0%;
 }
 
 /* Grunticon */
@@ -59,6 +60,8 @@ img {
     display: inline-block;
     width: 100%;
     text-align: center;
-    margin: 2% 0%;
+   	padding: 1% 0%;
+    background-color: grey;
+    border-width: 1%;
 }
 
