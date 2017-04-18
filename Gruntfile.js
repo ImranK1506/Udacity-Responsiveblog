@@ -12,7 +12,7 @@ module.exports = function(grunt) {
     responsive_images: {
       dev: {
         options: {
-          engine: 'gm',           // ImageMagick
+          engine: 'gm',           // GraphicsMagick
            sizes: [{
             name: 'small',
             width: '30%',
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
     /* Clear out the images directory if it exists */
     clean: {
       dev: {
-        src: ['images'],
+        src: ['images/fixed'],
       },
     },
 
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
     concat: {
         dist: {
           files: {
-          'js/concat.js': '*.js'
+          'js/concat.js': '*.js'      // destination: source
         }
       }
     },

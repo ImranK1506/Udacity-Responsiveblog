@@ -21,10 +21,15 @@ article {
 	width: 50em;
 }
 
-h1, h2 {
-	text-align: center;
+h1 {
+
 }
 
 img {
 	max-width: 100%;
+}
+
+#viewSource {
+	display: block;
+	text-align: center;
 }
