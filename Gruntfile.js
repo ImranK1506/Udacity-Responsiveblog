@@ -42,7 +42,7 @@ module.exports = function(grunt) {
     /* Clear out the images directory if it exists */
     clean: {
       dev: {
-        src: ['images/fixed'],
+        src: ['images/fixed', 'images_src/fixed'],
       },
     },
 

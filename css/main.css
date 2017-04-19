@@ -29,13 +29,6 @@ img {
 	max-width: 100%;
 }
 
-#viewSource {
-	display: block;
-	text-align: center;
-	width: 100%;
-	margin: 2% 0%;
-}
-
 /* Grunticon */
 .grunticons {
 	width: 50px;
@@ -57,11 +50,22 @@ img {
 
 /* font icon */
 .fonts {
-    display: inline-block;
+    display: block;
     width: 100%;
     text-align: center;
    	padding: 1% 0%;
-    background-color: grey;
     border-width: 1%;
+}
+
+.viewsource {
+	display: block;
+	text-align: center;
+	width: 20%;
+	margin: 1% 40%;
+	border: 5px double black;
+}
+
+.footer {
+	background-color: grey;
 }
 
