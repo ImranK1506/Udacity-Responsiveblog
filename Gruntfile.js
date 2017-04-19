@@ -10,19 +10,25 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     responsive_images: {
-      dev: {
-        options: {
-          engine: 'gm',           // GraphicsMagick
-           sizes: [{
-            name: 'small',
-            width: '30%',
-            suffix: '_small',
-            quality: 20
-          },{
-            name: 'large',
-            width: '50%',
-            suffix: '_large',
-            quality: 40
+        dev: {
+          options: {
+          engine: 'gm',   // GraphicsMagick
+            sizes: [{
+            width: '1600',
+            suffix: '_large_2x',
+            quality: 30
+          }, {
+            width: '800',
+            suffix: '_large_1x',
+            quality: 60
+          }, {
+            width: '1000',
+            suffix: '_medium_2x',
+            quality: 30
+          }, {
+            width: '500',
+            suffix: '_medium_1x',
+            quality: 60
           }]
         },
 
@@ -42,7 +48,7 @@ module.exports = function(grunt) {
     /* Clear out the images directory if it exists */
     clean: {
       dev: {
-        src: ['images/fixed', 'images_src/fixed'],
+        src: ['images', 'images_src/fixed'],
       },
     },
 
