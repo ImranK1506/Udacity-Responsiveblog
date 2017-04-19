@@ -15,14 +15,16 @@ I've left some boilerplate below for you.
 body {
 	width: 800px;
 	margin: 0 auto;
+	border: 10px lightgrey double;
+	padding: 2%;
 }
 
 article {
 	width: 50em;
 }
 
-h1, {
-
+h1 {
+	text-align: center;
 }
 
 img {
